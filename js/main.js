@@ -18,7 +18,7 @@ function logSVG() {
   console.log(this.id)
 }
 
-theButton.addEventListener("click",changeText);
+//theButton.addEventListener("click",changeText);
 //svgImage.addEventListener("click", logSVG),
 //svgImage2.addEventListener("click", logSVG);
 

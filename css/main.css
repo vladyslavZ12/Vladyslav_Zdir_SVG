@@ -7,3 +7,15 @@
 .img-wrapper img {
   width:100%;
 }
+
+.black-bg {
+  background-color: black;
+}
+
+#lGrain:hover,#rGrain:hover {
+  fill:red
+}
+
+#beerGraphic:hover #lGrain{
+  fill
+}
