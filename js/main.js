@@ -7,10 +7,11 @@ console.log("some message - from javascript");
 
 let theButton = document.querySelector("#myButton"),
     theHeading = document.querySelector('h1');
-    svgImage = document.querySelector("#svgGraphic");
+    //svgImage = document.querySelector("#svgGraphic"),
+    allSVGs = document.querySelectorAll(".svg");
 
 function changeText() {
-  document.querySelector('h1').textContent = "Hello there from the console";
+  theHeading.textContent = "Hello there from the console";
 }
 
 function logSVG() {
@@ -18,6 +19,10 @@ function logSVG() {
 }
 
 theButton.addEventListener("click",changeText);
-svgImage.addEventListener("mouseover", logSVG);
+//svgImage.addEventListener("click", logSVG),
+//svgImage2.addEventListener("click", logSVG);
 
+allSVGs.forEach(item => item.addEventListener('click',logSVG));
+
+//for(el in allSVGs) {}
 })();
